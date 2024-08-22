@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Informe</title>
+    <link rel="stylesheet" href="infostyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="form-page">
+    <div class="form-container">
+        <form action="index.html" method="get" onsubmit="return redirectToIndex()">
+            <h2>Crear Informe</h2>
+            
+            <label for="titulo">Título del Informe</label>
+            <input type="text" id="titulo" name="titulo" required>
+
+            <label for="detalles">Detalles</label>
+            <textarea id="detalles" name="detalles" rows="4" required></textarea>
+
+            <label for="fecha-publicacion">Fecha de Publicación</label>
+            <input type="date" id="fecha-publicacion" name="fecha-publicacion" required>
+
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" name="asunto" required>
+
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        function redirectToIndex() {
+            alert("Informe enviado exitosamente.");
+            window.location.href = "index.html";
+            return false;  // Previene el envío real del formulario para que la redirección funcione.
+        }
+    </script>
+</body>
+</html>

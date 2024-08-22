@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Nueva Actividad</title>
+    <link rel="stylesheet" href="actstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="form-page">
+    <div class="form-container">
+        <form action="index.html" method="get">
+            <h2>Crear Nueva Actividad</h2>
+            
+            <label for="titulo">Título de la Actividad</label>
+            <input type="text" id="titulo" name="titulo" required>
+
+            <label for="detalles">Detalles</label>
+            <textarea id="detalles" name="detalles" rows="4" required></textarea>
+
+            <label for="fecha-comienzo">Fecha de Comienzo</label>
+            <input type="date" id="fecha-comienzo" name="fecha-comienzo" required>
+
+            <label for="creador">Especialista que Crea la Actividad</label>
+            <select id="creador" name="creador" required>
+                <option value="redes">Lider</option>
+                <option value="pc">Especialista</option>
+                <option value="aplicaciones">Empleado</option>
+            </select>
+
+            <label for="dirigido">Especialista a Quien va Dirigida</label>
+            <select id="dirigido" name="dirigido" required>
+                <option value="redes">Especialista de Redes</option>
+                <option value="pc">Reparador de PC</option>
+                <option value="aplicaciones">Especialista en Aplicaciones</option>
+                <option value="pc">Empleado</option>
+
+            </select>
+
+            <button type="submit" class="btn-listo">Crear Actividad</button>
+        </form>
+    </div>
+</body>
+</html>
